@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [];
+
+        function replacer(int){
+            for(let i = 1 ; 1<=int ; i++){
+                if(i%2 === 0 && i % 3 === 0 && i%5 === 0){
+                    let value = "yu-gi-oh"
+                    array.push(value)
+                }
+            else if (i%2 == 0 && i%3 === 0){
+                let value = "yu-gi"
+                array.push(value)
+                }
+            else if (i%2 === 0){
+                let value ="yu"
+                array.push(value)
+                }
+            else {
+                array.push(i)
+            }
+              console.log(array)
+        }
+        return; 
+        }
+            replacer(100);
+        
+    </script>
+</body>
+</html>
